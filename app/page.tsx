@@ -95,15 +95,15 @@ export default function Home() {
         </div>
         <div className="text-3xl font-bold w-1/2 flex items-center justify-center">
           <div>
-            <span className="text-red-500 text-stroke">`&quot;`Animated </span>
+            <span className="text-red-500 text-stroke">&quot;Animated </span>
             <span>
               Face can express <br /> the
             </span>
-            <span className="text-white text-stroke">emotions</span>
+            <span className="text-white text-stroke"> emotions </span>
             <span>
-              which human face <br /> can`&apos;`t
+              which human face <br /> can&apos;t
             </span>
-            <span className="text-red-500 text-stroke"> `&quot;`</span>
+            <span className="text-red-500 text-stroke"> &quot;</span>
           </div>
         </div>
       </div>
