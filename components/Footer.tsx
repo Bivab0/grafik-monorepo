@@ -10,8 +10,8 @@ import {
 const Footer = () => {
   return (
     <>
-      <footer className="relative z-10 bg-white pt-20 pb-10 lg:pt-[120px] lg:pb-20 border-t border-t-blue-500">
-        <div className="container mx-auto w-full">
+      <footer className="bg-white pt-20 pb-10 lg:pt-[120px] lg:pb-20 border-t border-t-blue-500">
+        <div className="container mx-auto ml-20 w-full">
           <div className="flex flex-wrap -mx-4 lg:justify-between">
             <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
               <div className="w-full mb-10">
