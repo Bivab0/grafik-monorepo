@@ -22,8 +22,8 @@ export default function RootLayout({
         <div className="fixed w-full top-0">
           <Navbar />
         </div>
-        <div className="">{children}</div>
-        <div className="w-full">
+        <div className="w-full">{children}</div>
+        <div className="w-full overflow-hidden">
           <Footer/>
         </div>
       </body>
