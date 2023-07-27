@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import {
   BsChevronCompactLeft,
@@ -7,7 +8,6 @@ import {
   BsGithub,
   BsInstagram,
 } from "react-icons/bs";
-import { RxDotFilled } from "react-icons/rx";
 
 export default function Home() {
   const data = [
@@ -85,13 +85,13 @@ export default function Home() {
     return () => {
       clearInterval(slideInterval);
     };
-  }, [currentIndex]);
+  });
 
   return (
     <div className="w-full">
       <div className="flex w-full items-center mt-28">
         <div className="w-1/2 flex items-center justify-center">
-          <img src="/luffy.jpeg" alt="luffy" width={320} height={320} />
+          <Image src="/luffy.jpeg" alt="luffy" width={320} height={320} />
         </div>
         <div className="text-3xl font-bold w-1/2 flex items-center justify-center">
           <div>
@@ -125,7 +125,7 @@ export default function Home() {
           </div>
         </div>
         <div className="w-1/2">
-          <img src="/business.png" alt="business" height={750} width={750} />
+          <Image src="/business.png" alt="business" height={750} width={750} />
         </div>
       </div>
       <div className="w-full flex flex-col items-center justify-center mt-10">
@@ -169,65 +169,7 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <div className="w-full h-max bg-black text-white">
-        <div className="w-full flex justify-between">
-          <div className="w-1/5 flex items-center justify-center flex-col border-r-4 my-10">
-            <div className="text-4xl mb-6 font-bold pt-6">GrafiQ</div>
-            <div className="flex gap-6 text-3xl">
-              <div className="hover:scale-110 hover:cursor-pointer">
-                <BsFacebook />
-              </div>
-              <div className="hover:scale-110 hover:cursor-pointer">
-                <BsGithub />
-              </div>
-              <div className="hover:scale-110 hover:cursor-pointer">
-                <BsInstagram />
-              </div>
-            </div>
-            <div className="text-xs font-thin m-5">(Connect With Us)</div>
-          </div>
-          <div className="w-4/5 my-10 text-xl ml-16 pt-10">
-            <div className="flex w-full mb-6">
-              <div className="w-1/12 border-r-2 border-r-white uppercase font-bold">
-                Services
-              </div>
-              <div className="flex justify-between ml-10 w-11/12">
-                <div className="w-1/4">Animation</div>
-                <div className="w-1/4">Motion Graphics</div>
-                <div className="w-1/4">Advertisement</div>
-                <div className="w-1/4">VFX</div>
-              </div>
-            </div>
-            <div className="flex w-full mb-6">
-              <div className="w-1/12 border-r-2 border-r-white uppercase font-bold">
-                About
-              </div>
-              <div className="flex justify-between ml-10 w-11/12">
-                <div className="w-1/4">Our Story</div>
-                <div className="w-1/4">Benifits</div>
-                <div className="w-1/4">Teams</div>
-                <div className="w-1/4">Career</div>
-              </div>
-            </div>
-            <div className="flex w-full mb-6">
-              <div className="w-1/12 border-r-2 border-r-white uppercase font-bold">
-                Legal
-              </div>
-              <div className="flex justify-between ml-10 w-11/12">
-                <div className="w-1/4">Term and Connditions</div>
-                <div className="w-1/4">Privacy Policy</div>
-                <div className="w-1/4">Terms of Use</div>
-                <div className="w-1/4">Licence</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="text-sm font-thin flex items-center gap-2 justify-center py-5">
-          All right reserved by GrafiQ
-          <span className="text-xs">By Techtoor</span>
-        </div>
-      </div>
+     
     </div>
   );
 }
